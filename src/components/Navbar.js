@@ -19,8 +19,11 @@ export default function Navbar(props) {
                             <a className="nav-link" href="/news">{props.aboutText2}</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/contactus">{props.aboutText}</a>
+                            <a className="nav-link" href="/aboutus">{props.aboutText3}</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/contactus">{props.aboutText}</a>
+                        </li>                      
                         
                     </ul>
                     <form className="d-flex">
@@ -37,11 +40,13 @@ export default function Navbar(props) {
 Navbar.propTypes = {
     title: PropTypes.string.isRequired,
     aboutText: PropTypes.string.isRequired,
-    aboutText2: PropTypes.string.isRequired
+    aboutText2: PropTypes.string.isRequired,
+    aboutText3: PropTypes.string.isRequired
 }
 
 Navbar.defaultProps = {
     title: 'Set title here',
     aboutText: 'Set ur contact',
-    aboutText2: 'Set ur news'
+    aboutText2: 'Set ur news',
+    aboutText3: 'Set ur About Info'
   };

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import TextForm from './components/Textform';
 import ContactUs from './components/ContactUs';
 import News from './components/News';
+import AboutUs from './components/AboutUs';
 import React, { useState } from 'react';
 
 import {
@@ -18,7 +19,7 @@ function App() {
       {/* <Navbar title="TextUtils" aboutText="About TextUtils" /> */}
       {/* <Navbar/> */}
       <Router>
-        <Navbar title="TEXTOPEDIA" aboutText="Contact Us" aboutText2="News" />
+        <Navbar title="TEXTOPEDIA" aboutText="Contact Us" aboutText2="News" aboutText3='About Us' />
 
         <div className="container my-3">
           <Switch>
@@ -30,6 +31,10 @@ function App() {
 
             <Route exact path="/news">
               <News />
+            </Route>
+
+            <Route exact path="/aboutus">
+              <AboutUs />
             </Route>
 
             <Route exact path="/">
